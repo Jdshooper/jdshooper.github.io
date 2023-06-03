@@ -1,19 +1,12 @@
 @import "colours.css";
+@import "Components/footer.css";
+@import "Components/header.css";
 
 body {
     margin: 60px auto;
     width: 70%;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
+
 a {
     text-decoration: none;
     color: var(--link-text);
@@ -36,8 +29,4 @@ p {
     line-height: 1.1em;
     color: var(--paragraph-text);
     font-family: 'Lucida Console', 'Monaco', 'monospace';
-}
-footer {
-    border-top: 1px solid var(--border);
-    font-size: .8em;
 }
