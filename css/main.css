@@ -1,8 +1,15 @@
 @import "colours.css";
 @import "Components/footer.css";
 @import "Components/header.css";
+@import "Components/button.css";
+
+* {
+    background-color: var(--main-background);
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
 
 body {
+    min-width: 320px;
     margin: 60px auto;
     width: 70%;
 }
@@ -10,23 +17,24 @@ body {
 a {
     text-decoration: none;
     color: var(--link-text);
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
-a:hover {
-    text-decoration: underline;
-}
+
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: var(--header-text);
 }
+
 h2 {
     font-size: 2em;
     color: var(--header-text);
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.1em;
     color: var(--paragraph-text);
-    font-family: 'Lucida Console', 'Monaco', 'monospace';
 }
