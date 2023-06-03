@@ -1,3 +1,5 @@
+@import "colours.css";
+
 body {
     margin: 60px auto;
     width: 70%;
@@ -14,7 +16,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: var(--link-text);
 }
 a:hover {
     text-decoration: underline;
@@ -22,28 +24,20 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: var(--header-text);
 }
 h2 {
     font-size: 2em;
-    color: #222;
+    color: var(--header-text);
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
     line-height: 1.1em;
-    color: #333;
+    color: var(--paragraph-text);
     font-family: 'Lucida Console', 'Monaco', 'monospace';
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid var(--border);
     font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
 }
