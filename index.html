@@ -2,29 +2,19 @@
 <html>
 	<head>
 		<title>Jesse Hooper</title>
-		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<script src="javascript/ImportPartials.js"></script>
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-			<li><a href="/capstone">Capstone</a></li>
-    		</ul>
-		</nav>
+		<div include-partial="./partials/header.html"></div>
 		<div class="container">
     		<div class="blurb">
-			<h1>Jesse Hooper</h1>
-			<h2>Software Engineering Student</h2>
-			<p>Hi, I'm Jesse!</p>
-			<p>I'm a Software Engineering Student from the University of Calgary.</p>
-			<p>Feel free to email me below!</p>
+					<h1>Jesse Hooper</h1>
+					<h2>Software Engineer</h2>
+					<p>Hi, I'm Jesse!</p>
     		</div>
 		</div>
-		<footer>
-    		<ul>
-        		<li><a href="mailto:Jesse.hooper@ucalgary.com">email</a></li>
-		</ul>
-		</footer>
+		<div include-partial="./partials/footer.html"></div>
+		<script> importPartials(); </script>
 	</body>
 </html>
